@@ -2,6 +2,14 @@
     background-color: rgba(0, 0, 0, 0.2);
 }
 
+.dark-mode .about-section .content {
+    background: linear-gradient(135deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.2) 100%);
+}
+
+.light-mode .about-section .content {
+    background: linear-gradient(135deg, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.25) 100%);
+}
+
 .about-section {
     display: flex;
     gap: 30px;
@@ -20,6 +28,10 @@
 .about-section .content {
     text-align: left;
     z-index: 2;
+    position: relative;
+    background: linear-gradient(135deg, rgba(0,0,0,0.15) 0%, transparent 100%);
+    padding: 1rem;
+    border-radius: 8px;
 
     .social_icons {
         display: flex;
@@ -52,9 +64,17 @@
 .about-section .image-wrapper {
     z-index: 2;
     img {
-        width: 150px;
+        width: 200px;
+        height: 250px;
         border-radius: 50%;
+        object-fit: cover;
     }
+}
+
+.about p {
+    text-align: center;
+    padding-top: 30%;
+    padding-bottom: 30%;
 }
 
 .about p {
