@@ -8,7 +8,11 @@
         color: white;
     }
 }
-  
+.skill-icon {
+  width: 55px;
+  height: 55px;
+}
+
 .skills-container .skills-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

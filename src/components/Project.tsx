@@ -1,7 +1,7 @@
 import React from "react";
-import swimjournal from "../assets/images/swimjournal.png";
-import cmubulletin from "../assets/images/cmubulletin.png";
-import bias_lens from "../assets/images/bias_lens.png";
+import swimjournal from "../assets/images/swimjournal.jpg";
+import cmubulletin from "../assets/images/cmubulletin.jpg";
+import bias_lens from "../assets/images/bias_lens.jpg";
 import "../assets/styles/Project.scss";
 
 type ProjectItem = {

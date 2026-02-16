@@ -1,8 +1,51 @@
-.contact_wrapper svg {
-  font-size: 1em;
-  vertical-align: middle;
-  margin-right: 5px;
+/* ===== Contact Section ===== */
+
+#contact {
+  padding: 4rem 0;
+  text-align: center;
 }
+
+.contact_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact_wrapper h1 {
+  margin-bottom: 2rem;
+}
+
+/* ===== Contact Links ===== */
+
+.contact_links {
+  display: flex;
+  justify-content: center;   /* center horizontally */
+  align-items: center;
+  gap: 3rem;                 /* equal spacing between links */
+  flex-wrap: wrap;           /* responsive on small screens */
+}
+
+.contact_link {
+  display: flex;
+  align-items: center;       /* align icon + text vertically */
+  gap: 0.6rem;               /* space between icon and text */
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.contact_link:hover {
+  transform: translateY(-3px);
+  color: #5000ca;
+}
+
+/* Icon styling */
+.contact_wrapper svg {
+  font-size: 1.6rem;
+}
+
+/* ===== Form Styling (kept from your original file) ===== */
 
 .contact-form {
   padding-top: 20px;

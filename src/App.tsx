@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 // import Timeline from "./components/Timeline";
 import {
   Main,
-  Expertise,
+  About,
   Project,
   Contact,
   Navigation,
@@ -13,7 +13,7 @@ import FadeIn from "./components/FadeIn";
 import "./index.scss";
 
 function App() {
-  const [mode, setMode] = useState<string>("dark");
+  const [mode, setMode] = useState<string>("light");
 
   const handleModeChange = () => {
     if (mode === "dark") {
@@ -34,12 +34,11 @@ function App() {
       <Navigation parentToChild={{ mode }} modeChange={handleModeChange} />
       <FadeIn transitionDuration={700}>
         <Main />
-        <Expertise />
+        <About />
         {/* <Timeline /> */}
         <Project />
         <Contact />
       </FadeIn>
-      <Footer />
     </div>
   );
 }
